@@ -1,0 +1,37 @@
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: white;
+}
+.heading {
+  text-align: center;
+  padding-top: 40px;
+}
+.card {
+  text-align: center;
+  padding-top: 20px;
+}
+.card:hover {
+  border-color: green;
+}
+.footer {
+  text-align: center;
+  padding-top: 80px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+.logo {
+  margin-top: 50px;
+  height: 40px;
+  margin-left: 20px;
+}
+.testimonial {
+  background-image: linear-gradient(#eee, white);
+  margin-top: 40px;
+  text-align: center;
+}
+.faq {
+  text-align: center;
+  background-image: linear-gradient(#eee, white);
+}

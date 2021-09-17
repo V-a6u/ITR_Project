@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="search.css">
+	</head>
+	<body style="font-family: Bahnschrift;">
+	    <nav class="navbar navbar-expand-sm bg-primary">
+	        <ul class="navbar-nav">
+	            <li class="nav-item "><a class=" nav-link" href="index.html">OPEXX</a></li>
+	            <li class="nav-item"><a class="nav-link" href="#">SEARCH</a></li>
+	            <li class="nav-item"><a class="nav-link" href="pricing.html">PRICING</a></li>
+	        </ul>
+	    </nav>
+	    <div class="jumbotron header">
+	    	<ul class="nav nav-tabs tabheading">
+	    		<li class="active"><a data-toggle="tab" href="#tenders">Live Tenders</a></li>
+	    		<li><a data-toggle="tab" href="#winners">Winners</a></li>
+	    	</ul>
+	    	<div class="tab-content">
+  				<div id="tenders" class="tab-pane fade show active">
+  					<div class="container">
+  						<div class="row">
+  							<div class="col">
+  								<form>
+  									<div class="form-group row">
+  										<div class="col-md-9">
+  											<input type="text" class="form-control" placeholder="Keyword">
+  										</div>
+  										<div class="col-md-3">
+  											<input type="text" class="form-control" placeholder="Location">
+  										</div>  										
+  									</div>
+  									<div id="hiddenform" style="display: none;">
+	  									<div class="form-group row">
+	  										<div class="col-md-6">
+	  											<input type="text" class="form-control" placeholder="Min Value">
+	  										</div>
+	  										<div class="col-md-6">
+	  											<input type="text" class="form-control" placeholder="Max Value">
+	  										</div>  										
+	  									</div>  
+	  									<div class="form-group row">
+	  										<div class="col-md-6">
+	  											<input type="text" class="form-control" placeholder="Buyer Name">
+	  										</div>
+	  										<div class="col-md-6">
+	  											<input type="text" class="form-control" placeholder="CPV">
+	  										</div>  										
+	  									</div>  																
+	  									<div class="form-group row">
+	  										<div class="col-md-6">
+	  											<select class="form-control">
+	  												<option disabled selected="">Published</option>
+	  												<option>Any Time</option>
+			                                        <option>Today</option>
+			                                        <option>Within Last 7 Days</option>
+			                                        <option>Within Last 30 Days</option>
+			                                        <option>Custom Range</option>
+	  											</select>
+	  										</div>
+	  										<div class="col-md-6">
+	  											<select class="form-control">
+			                                        <option disabled="" selected="">Deadline</option>
+			                                        <option>Any Time</option>
+			                                        <option>In The Future</option>
+			                                        <option>Within 7 Days</option>
+			                                        <option>Within 30 Days</option>
+			                                        <option>Within a year</option>
+			                                        <option>Custom Range</option>
+			                                    </select>
+	  										</div>  										
+	  									</div>  	  												
+  									</div>
+  								</form>
+  								<button class="togglelink" onclick="toggleDisplay();">Show More/Less</button>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<div id="winners" class="tab-pane fade">
+  					<p style="margin-left:25%;margin-right: 25%;font-size: 1.5em">Winner and award information allow you to analyze previously awarded contracts. Start your free 14-day trial now to see which companies have won tenders and which organizations have issued tenders before.</p>
+  					<button class="btn btn-success win-btn">START FREE TRIAL</button>&nbsp;&nbsp;&nbsp;
+  					<button class="btn win-btn" style="background: white;color: blue">Login</button>
+  				</div>
+  			</div>
+	    </div>
+	    <div style="text-align: center;margin-top: 40px;">
+	    	<p style="font-size: 55px;">9,000,000 tenders at your fingertips.</p>
+	    	<h3 style="color: blue;margin-top: 40px;">Start free trial for 14 days. No credit card needed.</h3>
+	    	<button class="btn btn-success" style="margin-top: 40px">START FREE TRIAL</button>
+	    </div>
+	    <script>
+			function toggleDisplay(){
+				var x = document.getElementById("hiddenform");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+	    </script>
+	</body>
+</html>

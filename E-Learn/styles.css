@@ -1,0 +1,47 @@
+.jumbotron-with-bg {
+  color: white;
+  background-image: url("https://www.futurity.org/wp/wp-content/uploads/2018/04/coder-coding-on-laptop_1600.jpg");
+
+  padding-top: 15em;
+  padding-bottom: 15em;
+  padding-left: 5em;
+}
+
+.jumbotron-text-1 {
+  font-size: 65px;
+}
+
+.jumbotron-text-2 {
+  font-size: 23px;
+}
+
+.pad {
+  padding-top: 20px;
+}
+
+.row1 {
+  margin-top: 0%;
+  background: linear-gradient(-45deg, #ec5252 0, #6e1a52 100%);
+}
+
+.feat,
+.feat-bel {
+  color: #fff;
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+.row2 {
+  background: white;
+  margin-top: 40px;
+  padding: 10px;
+  text-align: center;
+}
+footer {
+  margin-top: 1.5em;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 8px 0 8px;
+}

@@ -1,0 +1,38 @@
+.nav-link {
+  color: gray;
+}
+.nav-link:hover {
+  color: black;
+}
+
+.nav-item {
+  padding: 20px;
+}
+.carousel-image {
+  background-position: center;
+  width: 100%;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.step-image {
+  width: 100%;
+}
+footer {
+  padding-top: 50px;
+  color: #fff;
+  background-color: #193040;
+}
+hr {
+  border: 1px solid;
+}
+.logo {
+  width: 150px;
+}
+.upbutton {
+  color: blue;
+  text-align: center;
+  height: 120px;
+}

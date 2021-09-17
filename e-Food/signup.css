@@ -1,0 +1,22 @@
+body {
+  background: url("images/signup.jpg") no-repeat;
+}
+form {
+  width: 60%;
+  margin: 10px 20%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  text-align: center;
+  opacity: 0.8;
+}
+
+form p {
+  margin: 5%;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+
+input {
+  font-size: 15px;
+}

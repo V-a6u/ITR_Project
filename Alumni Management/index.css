@@ -1,0 +1,83 @@
+body {
+  background: url("images/background.jpg");
+}
+header {
+  margin-top: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid black;
+}
+
+li a:hover,
+a.active {
+  background-color: red;
+  text-decoration: none;
+  color: white;
+}
+.icon {
+  height: 24px;
+  width: 30px;
+}
+#myCarousel2 {
+  background: url("images/carousel.jpg") no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: white;
+}
+#myCarousel2 .carousel-item h1,
+#myCarousel2 .carousel-item p {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#myCarousel2 .carousel-item {
+  margin-top: 10%;
+}
+.row2 {
+  text-align: center;
+  margin-top: 30px;
+}
+.icon2 {
+  font-size: 60px;
+}
+.dumbledore {
+  width: 100%;
+}
+
+#peopleCarousel .carousel-inner .carousel-item.active,
+#peopleCarousel .carousel-inner .carousel-item-next,
+#peopleCarousel .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+#peopleCarousel .carousel-inner .carousel-item-right.active,
+#peopleCarousel .carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+#peopleCarousel .carousel-inner .carousel-item-left.active,
+#peopleCarousel .carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+
+#peopleCarousel .carousel-inner .carousel-item-right,
+#peopleCarousel .carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
